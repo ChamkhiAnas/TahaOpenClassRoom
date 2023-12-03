@@ -176,6 +176,55 @@
                     <div class="commentcamarche">
                         <span>Comment ça marche ?</span>
                     </div>
+
+                    <h2 class="typomatiere">Table des matières</h2>
+                    <div class="accordion-wrapper">
+                        <div class="accordion ">
+                            <div class="accordion-infos">
+                                <div class="course-flag"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path fill="#ffffff" d="M102 480H64V57.37l4.69-4.68C72.14 49.23 92.78 32 160 32c37.21 0 78.83 14.71 115.55 27.68C305.12 70.13 333.05 80 352 80c42.83 0 72.72-14.25 73-14.4l23-11.14v259.43l-8.84 4.42C437.71 319 403.19 336 352 336c-24.14 0-54.38-7.14-86.39-14.71C229.63 312.79 192.43 304 160 304c-36.87 0-49.74 5.58-58 9.11Z"/></svg></div>
+                                <p class="accordion-heading">Partie 2 - Comprendre les Servlets et les JSPs</p>    
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#565656" d="M8.59 16.59L13.17 12L8.59 7.41L10 6l6 6l-6 6l-1.41-1.41z"/></svg>                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="#565656" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6l-6-6l1.41-1.41z"/></svg>
+                            </div>
+
+
+                        </div>
+                        <div class="panel block">
+                            <ol>
+                                <li>
+                                    <a>Qu'est-ce que Java EE ?</a>
+                                </li>
+                                <li>
+                                    <a>Le modèle MVC</a>
+                                </li>
+                                <li>
+                                    <a>Installer un environnement de développement</a>
+                                </li>
+                                <li>
+                                    <a>Créer une première application Java EE</a>
+                                </li>
+                            </ol>
+                            <div class="panel-quizz">
+                                <ul>
+                                    <li>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"><path fill="#271a38" d="M5 21V9h3V7q0-1.671 1.164-2.836T12 3q1.671 0 2.836 1.164T16 7v2h3v12H5Zm7-4.5q.633 0 1.066-.434q.434-.433.434-1.066t-.434-1.066Q12.633 13.5 12 13.5t-1.066.434Q10.5 14.367 10.5 15t.434 1.066q.433.434 1.066.434ZM9 9h6V7q0-1.25-.875-2.125T12 4q-1.25 0-2.125.875T9 7v2Z"/></svg>
+                                        <a>
+
+                                            Quiz : Quiz 1
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        
+
+                    </div>
+                   
+    
                 </div>
                 <div class="lesson-badge">
                     <div class="lesson-badge-btn">Accéder au forum</div>
@@ -195,5 +244,36 @@
             </div>
         </div>
     </article>
+
+<script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+        
+        
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            var activearrow = this.children[2]
+            var disablearrow = this.children[1]
+            console.log("active",acc)
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+              activearrow.style.display="none"
+              disablearrow.style.display="block"
+
+            } else {
+              panel.style.display = "block";
+              activearrow.style.display="block"
+              disablearrow.style.display="none"
+
+
+            }
+          });
+            // Simulate a click on each accordion to make them open by default
+          acc[i].click();
+        }
+</script>
 </body>
 </html>
