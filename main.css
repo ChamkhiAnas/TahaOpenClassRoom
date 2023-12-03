@@ -600,7 +600,7 @@ figcaption{
     border-bottom: 1px solid #DAD9DC;
     display: flex;
     flex-direction:row;
-    margin-bottom: 0px;
+    margin-bottom: 1rem;
     justify-content: space-between;
     align-items: center;
   }
@@ -673,14 +673,90 @@ figcaption{
     font-family: "Inter",sans-serif;
     font-weight: 300;
  }
- .panel-quizz>ul>li>a:hover{
-    color:#7451eb;
-    font-weight: 700;
+ .panel-quizz>ul>li:hover #quiz_svg {
+  fill: #7451eb; 
+}
+
+.panel-quizz>ul>li:hover #quiz_num {
+  color:#7451eb;
+  font-weight: 700;
+  cursor: pointer;
+
+}
+ .panel-quizz>ul>li>svg:hover{
+ }
+
+
+ .panel-quizz>ul>li>svg{
+    fill:#271a38;
     cursor: pointer;
  }
- .panel-quizz>ul>li>svg:hover{
-    fill: #7451eb;
+ #certif-text{
+    font-weight: 300;
+    font-size: 1rem;
+ }
+ #certif-text:hover{
+    font-weight: 700;
+    color:#7451eb;
     cursor: pointer;
+
+}
+.teacher-info{
+    box-shadow: 2px 4px 3px rgba(236,236,236,.5);
+    background: #fffaee;
+    border-bottom: 1px solid #dfdfdf;
+    margin-top: 40px;
+    padding: 35px 0;
+
+}
+ #flag-model{
+    width: 48px;
+    height: 48px;
+    top: 4px;
+ }
+ .teacher-general-infos>h6{
+    font-family: "Inter",sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    margin: 10px 0;
+    font-weight: 700;
+ }
+ .teacher-details{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+ }
+ .teacher-description{
+    display: flex;
+    flex-direction: column;  
+ }
+ .teacher-description>h2{
+    font-family: "Inter",sans-serif;
+    margin: 10px 0 0;
+    font-size: 1rem;
+    line-height: 1.625rem;
+    position: relative;
+    top: -4px;
+    font-weight: 700;
+    color:#271a38;
+ }
+ .teacher-description>p{
+    font-family: "Inter",sans-serif;
+    font-size: 1rem;
+    line-height: 1.625rem;
+    color:#271a38;
+    font-weight: 400;
+    padding: 0px;
+    margin: 0px;
+ }
+ .teacher-details>span{
+    background-image: url("https://oc-user.imgix.net/users/avatars/16010488280562_MathieuNebra_square.jpg?auto=compress,format&q=80");
+    width: 60px;
+    height: 60px;
+    background-position:center ;
+    background-size: cover;
 
  }
 @media screen and (min-width: 768px) {
